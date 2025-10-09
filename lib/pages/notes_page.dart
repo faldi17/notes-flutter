@@ -14,6 +14,14 @@ class _NotesPage extends State<NotesPage> {
   // text controller to access what the user typed
   final textController = TextEditingController();
 
+  @override
+  void initState() {
+    super.initState();
+
+    // on app startup, fetch existing notes
+    readNotes();
+  }
+
   // create a note
   void createNote() {
     showDialog(
@@ -27,6 +35,9 @@ class _NotesPage extends State<NotesPage> {
               // add to db
               context.read<NoteDatabase>().addNote(textController.text);
 
+              // clear controller
+              textController.clear();
+
               // pop dialog box
               Navigator.pop(context);
             },
@@ -39,7 +50,7 @@ class _NotesPage extends State<NotesPage> {
 
   // read notes
   void readNotes() {
-    context.watch<NoteDatabase>().fetchNotes();
+    context.read<NoteDatabase>().fetchNotes();
   }
 
   // update a note
@@ -67,7 +78,16 @@ class _NotesPage extends State<NotesPage> {
           final note = currentNotes[index];
 
           // list tile UI
-          return ListTile(title: Text(note.text));
+          return ListTile(
+            title: Text(note.text),
+            trailing: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // edit button
+                // delete button
+              ],
+            ),
+          );
         },
       ),
     );

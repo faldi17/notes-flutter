@@ -54,6 +54,34 @@ class _NotesPage extends State<NotesPage> {
   }
 
   // update a note
+  void updateNote(Note note) {
+    // pre-fill the current note text
+    textController.text = note.text;
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text("Update Note"),
+        content: TextField(controller: textController),
+        actions: [
+          // update button
+          MaterialButton(
+            onPressed: () {
+              // update note in db
+              context.read<NoteDatabase>().updateNote(
+                note.id,
+                textController.text,
+              );
+              // clear controller
+              textController.clear();
+              // pop dialog box
+              Navigator.pop(context);
+            },
+            child: const Text("Update"),
+          ),
+        ],
+      ),
+    );
+  }
 
   // delete a note
 

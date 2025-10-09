@@ -84,6 +84,9 @@ class _NotesPage extends State<NotesPage> {
   }
 
   // delete a note
+  void deleteNote(int id) {
+    context.read<NoteDatabase>().deleteNote(id);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +115,16 @@ class _NotesPage extends State<NotesPage> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 // edit button
+                IconButton(
+                  onPressed: () => updateNote(note),
+                  icon: const Icon(Icons.edit),
+                ),
+
                 // delete button
+                IconButton(
+                  onPressed: () => deleteNote(note.id),
+                  icon: const Icon(Icons.delete),
+                ),
               ],
             ),
           );

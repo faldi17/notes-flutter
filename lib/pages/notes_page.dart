@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_flutter/models/note.dart';
 import 'package:notes_flutter/models/note_database.dart';
 import 'package:provider/provider.dart';
 
@@ -23,8 +24,13 @@ class _NotesPage extends State<NotesPage> {
           // create button
           MaterialButton(
             onPressed: () {
+              // add to db
               context.read<NoteDatabase>().addNote(textController.text);
+
+              // pop dialog box
+              Navigator.pop(context);
             },
+            child: const Text("Create"),
           ),
         ],
       ),
@@ -32,6 +38,9 @@ class _NotesPage extends State<NotesPage> {
   }
 
   // read notes
+  void readNotes() {
+    context.watch<NoteDatabase>().fetchNotes();
+  }
 
   // update a note
 
@@ -39,11 +48,27 @@ class _NotesPage extends State<NotesPage> {
 
   @override
   Widget build(BuildContext context) {
+    // note database
+    final noteDatabase = context.watch<NoteDatabase>();
+
+    // current notes
+    List<Note> currentNotes = noteDatabase.currentNotes;
+
     return Scaffold(
       appBar: AppBar(title: Text('Notes')),
       floatingActionButton: FloatingActionButton(
         onPressed: createNote,
         child: const Icon(Icons.add),
+      ),
+      body: ListView.builder(
+        itemCount: currentNotes.length,
+        itemBuilder: (context, index) {
+          // get individual note
+          final note = currentNotes[index];
+
+          // list tile UI
+          return ListTile(title: Text(note.text));
+        },
       ),
     );
   }

@@ -98,12 +98,17 @@ class _NotesPage extends State<NotesPage> {
     List<Note> currentNotes = noteDatabase.currentNotes;
 
     return Scaffold(
-      appBar: AppBar(elevation: 0, backgroundColor: Colors.transparent),
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        foregroundColor: Theme.of(context).colorScheme.inversePrimary,
+      ),
       backgroundColor: Theme.of(context).colorScheme.background,
       floatingActionButton: FloatingActionButton(
         onPressed: createNote,
         child: const Icon(Icons.add),
       ),
+      drawer: Drawer(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_flutter/components/drawer_tile.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -10,8 +11,21 @@ class MyDrawer extends StatelessWidget {
       child: Column(
         children: [
           // header
+          const DrawerHeader(child: Icon(Icons.note)),
+
           // notes tile
+          DrawerTile(
+            title: "Notes",
+            leading: const Icon(Icons.home),
+            onTap: () => Navigator.pop(context),
+          ),
+
           // settings tile
+          DrawerTile(
+            title: "Settings",
+            leading: const Icon(Icons.settings),
+            onTap: () {},
+          ),
         ],
       ),
     );

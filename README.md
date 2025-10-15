@@ -12,11 +12,11 @@ A simple and modern notes app built with **Flutter** and **Isar database**, feat
 Here’s how the app looks:
 
 <p align="center">
-  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.16.05.png" width="250">
-  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.23.png" width="250">
-  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.42.png" width="250">
-  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.58.png" width="250">
-  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.18.07.png" width="250">
+  <img src="./screenshots/Screenshot1.png" width="250">
+  <img src="./screenshots/Screenshot2.png" width="250">
+  <img src="./screenshots/Screenshot3.png" width="250">
+  <img src="./screenshots/Screenshot4.png" width="250">
+  <img src="./screenshots/Screenshot5.png" width="250">
 </p>
 
 ## 🧠 Tech Stack

@@ -31,6 +31,7 @@ class NoteTile extends StatelessWidget {
         trailing: Builder(
           builder: (context) {
             return IconButton(
+              icon: const Icon(Icons.more_vert),
               onPressed: () => showPopover(
                 width: 100,
                 height: 100,
@@ -41,7 +42,6 @@ class NoteTile extends StatelessWidget {
                   onDeleteTap: onDeletePressed,
                 ),
               ),
-              icon: const Icon(Icons.more_vert),
             );
           }
         ),

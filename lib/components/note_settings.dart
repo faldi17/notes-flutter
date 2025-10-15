@@ -16,7 +16,10 @@ class NoteSettings extends StatelessWidget {
       children: [
         // edit option
         GestureDetector(
-          onTap: onEditTap,
+          onTap: () {
+            Navigator.pop(context);
+            onEditTap!();
+          },
           child: Container(
             height: 50,
             color: Theme.of(context).colorScheme.background,
@@ -34,7 +37,10 @@ class NoteSettings extends StatelessWidget {
 
         // delete option
         GestureDetector(
-          onTap: onDeleteTap,
+          onTap: () {
+            Navigator.pop(context);
+            onDeleteTap!();
+          },
           child: Container(
             height: 50,
             color: Theme.of(context).colorScheme.background,

@@ -4,6 +4,7 @@ class NoteTile extends StatelessWidget {
   final String text;
   final void Function()? onEditPressed;
   final void Function()? onDeletePressed;
+  
   const NoteTile({
     super.key,
     required this.text,

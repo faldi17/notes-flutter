@@ -1,16 +1,43 @@
-# notes_flutter
+# 📝 Notes Flutter
 
-A new Flutter project.
+A simple and modern notes app built with **Flutter** and **Isar database**, featuring **dark/light mode** themes.
 
-## Getting Started
+## 🚀 Features
+- Create, edit, and delete notes  
+- Local data storage using **Isar DB**  
+- **Dark & Light theme** support  
+- Clean and responsive UI  
 
-This project is a starting point for a Flutter application.
+## 📱 App Preview
+Here’s how the app looks:
 
-A few resources to get you started if this is your first Flutter project:
+![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.16.05.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.23.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.42.png)
+
+![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.58.png)
+
+![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.18.07.png)
+
+## 🧠 Tech Stack
+- **Flutter**
+- **Dart**
+- **Isar Database**
+- **Provider**
+- **Material Design**
+
+## ⚙️ Installation
+```bash
+# Clone this repository
+git clone https://github.com/username/notes_flutter.git
+
+# Navigate to the project folder
+cd notes_flutter
+
+# Get dependencies
+flutter pub get
+
+# Run the app
+flutter run

@@ -11,15 +11,13 @@ A simple and modern notes app built with **Flutter** and **Isar database**, feat
 ## 📱 App Preview
 Here’s how the app looks:
 
-![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.16.05.png)
-
-![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.23.png)
-
-![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.42.png)
-
-![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.58.png)
-
-![](./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.18.07.png)
+<p align="center">
+  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.16.05.png" width="250">
+  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.23.png" width="250">
+  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.42.png" width="250">
+  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.17.58.png" width="250">
+  <img src="./screenshots/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202025-10-15%20at%2005.18.07.png" width="250">
+</p>
 
 ## 🧠 Tech Stack
 - **Flutter**

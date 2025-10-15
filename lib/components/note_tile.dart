@@ -28,12 +28,22 @@ class NoteTile extends StatelessWidget {
       ),
       child: ListTile(
         title: Text(text),
-        trailing: IconButton(
-          onPressed: () => showPopover(
-            context: context,
-            bodyBuilder: (context) => NoteSettings(),
-          ),
-          icon: const Icon(Icons.more_vert),
+        trailing: Builder(
+          builder: (context) {
+            return IconButton(
+              onPressed: () => showPopover(
+                width: 100,
+                height: 100,
+                backgroundColor: Theme.of(context).colorScheme.background,
+                context: context,
+                bodyBuilder: (context) => NoteSettings(
+                  onEditTap: onEditPressed,
+                  onDeleteTap: onDeletePressed,
+                ),
+              ),
+              icon: const Icon(Icons.more_vert),
+            );
+          }
         ),
       ),
     );
